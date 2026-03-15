@@ -1,0 +1,172 @@
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url(./images/indonesia.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+.hero-title {
+    font-size: 46px;
+    font-weight: bold;
+    font-family: Google Sans;
+}
+
+.btn-primary {
+    background-color: #DD2242;
+    width: 235px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: Playfair Display;
+    font-weight: 300px;
+}
+
+.hero-cards-container {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 230px; 
+    color: rgb(230, 230, 230);
+    font-family: sans-serif;
+}
+
+.hero-cards-container::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.293); 
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.number {
+    color: #DD2242;
+    font-weight: bold;
+    font-size: 11px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card-title {
+    font-size: 15px;
+    margin: 5px 0 15px 0;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #afaeae; 
+    font-size: 12px;
+    max-width: 220px;
+}
+
+.features-section {
+    background-color: #010A20;   
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 30px;
+}
+
+.section-title {
+    color: white;
+    font-size: 39px;
+    font-family: Google Sans;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.section-desc {
+    color: #afaeae;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-outline {
+    background-color: #DD2242;
+    width: 235px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: Playfair Display;
+    font-weight: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.secrets-section {
+    height: 100vh;
+    background: 
+                url(./images/manatmountain.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ .secret-title {
+    color: #010A20;
+    text-align: center;
+    font-size: 38px;
+    font-family: Playfair Display;
+ }
+
+ .stats-section {
+    background-color: #010A20;
+    height: 80vh;
+ }
+
+ .stats-title {
+    color: white;
+    font-size: 34px;
+    font-family: Google Sans;
+    text-align: left;
+    padding-left: 30px;
+ }
+
+ .stats-desc {
+    color: #afaeae;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+ .stat-number {
+    color: #DD2242;
+    text-align: center;
+    font-family: Google Sans;
+    font-size: 30px;
+ }
+
+ .stat-text {
+    color: #afaeae;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
