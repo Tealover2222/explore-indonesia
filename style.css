@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .hero-section {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
@@ -170,3 +176,158 @@
     padding-left: 10px;
     padding-right: 10px;
  }
+
+.promo-section {
+    height: 90vh;
+    background-color: rgb(235, 235, 235);
+}
+
+.promo-title {
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.promo-text {
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+}
+
+.video-section {
+    background: 
+                url(./images/backgroung-photo-of-living.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+}
+
+.video-frame {
+    width: 100%;
+    max-width: 500px; 
+}
+
+.video-frame iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+}
+
+.video-feature-img {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 30px;
+}
+
+.feature-label {
+    display: flex;
+    text-align: center;
+    padding-left: 90px;
+    font-size: 22px;
+    color: white;
+}
+
+.feature-text {
+    display: flex;
+    text-align: center;
+    color: #5c5c5c;
+}
+
+.gallery-section {
+    height: 100vh
+}
+
+.gallery-title {
+    font-size: 40px;
+    display: flex;
+    text-align: center;
+    padding-left: 37px;
+}
+
+.gallery-desc {
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    font-family: DM Sans;
+    color: #5c5c5c;
+}
+
+.steps-section {
+    background-color: #DCE8F2;
+}
+
+.step-title {
+    font-size: 40px;
+    font-family: DM Sans;
+    font-weight: bold;
+    text-align: center;
+}
+
+.step-name {
+    font-size: 22px;
+    font-family: DM Sans;
+    font-weight: bold;
+    text-align: center;
+}
+
+.step-description {
+    color: #8a8a8a;
+    font-size: 16px;
+    font-family: DM Sans;
+    text-align: center;
+}
+
+.more-description {
+    color: #DD2242;
+    font-size: 16px;
+    font-family: DM Sans;
+    text-align: center;   
+}
+
+.step-index {
+    background-color: #DD2242;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: DM Sans;
+    font-weight: bold;
+    margin-left: 125px;
+}
+
+.step-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: #010A20;
+    height: 60vh;
+}
+
+.logo-footer {
+    color: white;
+}
+
+.footer-links {
+    color: white;
+}
+
+.copyright {
+    color: white;
+}
