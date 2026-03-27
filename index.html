@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Indonesia</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -87,18 +90,38 @@
         <section class="secrets-section">
             <div class="secrets-container">
                 <h2 class="secret-title">Explore Our Secrets</h2>
-                <div class="secrets-slider">
-                    <i class="bi bi-caret-left-fill arrow-icon"></i>
-                    <div class="secrets-image-wrapper">
-                        <img src="da" alt="sea">
+                <div class="slider-container">
+                    <button class="arrow prev-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="secrets-slider">
+                        <div class="secrets-image-wrapper">
+                            <img src="./images/tropicalbeach.webp" alt="sea" class="slider-image">
+                        </div>
+                        <div class="secrets-image-wrapper2">
+                            <img src="da" alt="forest" class="secret-img">
+                        </div>
+                        <div class="secrets-image-wrapper2">
+                            <img src="da" alt="mountain" class="secret-img">
+                        </div>
+
                     </div>
-                    <div class="secrets-image-wrapper">
-                        <img src="da" alt="forest">
-                    </div>
-                    <div class="secrets-image-wrapper">
-                        <img src="da" alt="mountain">
-                    </div>
-                    <i class="bi bi-caret-right-fill arrow-icon"></i>
+                    <button class="arrow next-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="pagination">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot active"></span> <span class="dot"></span>
                 </div>
             </div>
         </section>
@@ -169,12 +192,12 @@
                         tempus, eget tincidunt.</p>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/two-girls.webp" alt="2 girls">
-                    <img src="./images/man-look-at-volcano.webp" alt="volcano">
-                    <img src="./images/sea-with-mountain.webp" alt="sea">
-                    <img src="./images/girl-look-at-mountain.webp" alt="girl at mountain">
-                    <img src="./images/man-at-field.webp" alt="man at field">
-                    <img src="./images/mountain-with-fog.webp" alt="mountain with fog">
+                    <img src="./images/two-girls.webp" alt="2 girls" class="item item-1">
+                    <img src="./images/man-look-at-volcano.webp" alt="volcano" class="item item-2">
+                    <img src="./images/sea-with-mountain.webp" alt="sea" class="item item-3">
+                    <img src="./images/girl-look-at-mountain.webp" alt="girl at mountain" class="item item-4">
+                    <img src="./images/man-at-field.webp" alt="man at field" class="item item-5">
+                    <img src="./images/mountain-with-fog.webp" alt="mountain with fog" class="item item-6">
                 </div>
             </div>
         </section>
@@ -210,12 +233,12 @@
     </main>
     <footer class="footer">
         <div class="footer-bottom">
-            <a href="#" class="logo-footer"><span>Explore</span>Indonesia</a>
+            <a href="#" class="logo-footer">Explore<br>Indonesia</a>
             <ul class="footer-links">
-                <li>About</li>
-                <li>Pricing</li>
-                <li>Company</li>
-                <li>Blog</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
             <p class="copyright">Copyright © 2019</p>
         </div>

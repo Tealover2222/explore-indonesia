@@ -1,10 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.hero-section {
+.header {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url(./images/indonesia.webp);
@@ -17,6 +11,16 @@ body {
     text-align: center;
     color: white;
     font-family: sans-serif;
+}
+
+.logo-header {
+    color: white;       
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navigation {
+    display: none;
 }
 
 .hero-title {
@@ -57,7 +61,7 @@ body {
 .card {
     position: relative;
     z-index: 2;
-    margin-bottom: 20px;
+    height: 120px;
 }
 
 .number {
@@ -65,12 +69,10 @@ body {
     font-weight: bold;
     font-size: 11px;
     display: block;
-    margin-bottom: 5px;
 }
 
 .card-title {
     font-size: 15px;
-    margin: 5px 0 15px 0;
     font-weight: 700;
 }
 
@@ -94,7 +96,7 @@ body {
 .section-title {
     color: white;
     font-size: 39px;
-    font-family: Google Sans;
+    font-family: sans-serif;
     text-align: left;
     padding-left: 10px;
 }
@@ -139,6 +141,78 @@ body {
     font-family: Playfair Display;
  }
 
+ .slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.secrets-image-wrapper {
+    width: 270px;
+    height: 200px;
+    border-radius: 5px; 
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.secret-img {
+    display: none;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #051630;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: opacity 0.3s;
+}
+
+.arrow:hover {
+    opacity: 0.7;
+}
+
+.prev-arrow {
+    left: -10px; 
+}
+
+.next-arrow {
+    right: -10px; 
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px; 
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background-color: #98A7B5; 
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    width: 45px; 
+    border-radius: 10px; 
+    background-color: #E12D45; 
+}
+
  .stats-section {
     background-color: #010A20;
     height: 80vh;
@@ -147,14 +221,12 @@ body {
  .stats-title {
     color: white;
     font-size: 34px;
-    font-family: Google Sans;
     text-align: left;
     padding-left: 30px;
  }
 
  .stats-desc {
     color: #afaeae;
-    font-family: sans-serif;
     font-size: 14px;
     text-align: center;
     padding-left: 10px;
@@ -164,7 +236,6 @@ body {
  .stat-number {
     color: #DD2242;
     text-align: center;
-    font-family: Google Sans;
     font-size: 30px;
  }
 
@@ -196,18 +267,18 @@ body {
 }
 
 .video-section {
-    background: 
-                url(./images/backgroung-photo-of-living.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), 
+                url(    ./images/backgroung-photo-of-living.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .section-title {
-  font-size: 40px;
-  font-weight: bold;
-  display: flex;
-  text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
 }
 
 .video-frame {
@@ -238,7 +309,7 @@ body {
 .feature-text {
     display: flex;
     text-align: center;
-    color: #5c5c5c;
+    color: #181818;
 }
 
 .gallery-section {
@@ -322,12 +393,30 @@ body {
 
 .logo-footer {
     color: white;
+    display: flex;
+    justify-content: center;  
+    align-items: center;        
+    height: 200px;;
+    text-decoration: none;
+    font-size: 24px;
 }
 
 .footer-links {
-    color: white;
+  list-style: none;
+  padding: 0px 120px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.5;
+  display: block; 
 }
 
 .copyright {
     color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
