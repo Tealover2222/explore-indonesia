@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
@@ -26,7 +32,8 @@
 .hero-title {
     font-size: 46px;
     font-weight: bold;
-    font-family: Google Sans;
+    text-align: left;
+    padding-left: 30px;
 }
 
 .btn-primary {
@@ -37,8 +44,8 @@
     border: none;
     border-radius: 20px;
     font-size: 15px;
-    font-family: Playfair Display;
     font-weight: 300px;
+    transform: translateY(-25px);
 }
 
 .hero-cards-container {
@@ -84,6 +91,8 @@
 
 .features-section {
     background-color: #010A20;   
+    overflow: hidden;
+    height: 159vh;
 }
 
 .image-container {
@@ -95,7 +104,7 @@
 
 .section-title {
     color: white;
-    font-size: 39px;
+    font-size: 30px;
     font-family: sans-serif;
     text-align: left;
     padding-left: 10px;
@@ -132,13 +141,15 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
+
 
  .secret-title {
     color: #010A20;
     text-align: center;
     font-size: 38px;
-    font-family: Playfair Display;
+    font-weight: 600;
  }
 
  .slider-container {
@@ -151,7 +162,7 @@
 
 .secrets-image-wrapper {
     width: 270px;
-    height: 200px;
+    height: 170px;
     border-radius: 5px; 
     overflow: hidden; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
@@ -197,12 +208,13 @@
     justify-content: center;
     align-items: center;
     gap: 12px; 
+    transform: translateY(-30px);
 }
 
 .dot {
     width: 14px;
     height: 14px;
-    background-color: #98A7B5; 
+    background-color: #85A3B2; 
     border-radius: 50%;
     transition: all 0.3s ease;
 }
@@ -210,12 +222,13 @@
 .dot.active {
     width: 45px; 
     border-radius: 10px; 
-    background-color: #E12D45; 
+    background-color: #DD2242; 
 }
 
  .stats-section {
     background-color: #010A20;
     height: 80vh;
+    overflow: hidden;
  }
 
  .stats-title {
@@ -223,6 +236,7 @@
     font-size: 34px;
     text-align: left;
     padding-left: 30px;
+    font-weight: 500;
  }
 
  .stats-desc {
@@ -237,6 +251,7 @@
     color: #DD2242;
     text-align: center;
     font-size: 30px;
+    font-weight: 400;
  }
 
  .stat-text {
@@ -251,19 +266,38 @@
 .promo-section {
     height: 90vh;
     background-color: rgb(235, 235, 235);
+    overflow: hidden;
 }
 
 .promo-title {
     display: flex;
     text-align: center;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 600;
+    padding-top: 80px;
 }
 
 .promo-text {
     display: flex;
     text-align: center;
     font-size: 16px;
+    padding-top: 20px;
+}
+
+.promo-btn {
+    background-color: #DD2242;
+    width: 235px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: Playfair Display;
+    font-weight: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(20px);
 }
 
 .video-section {
@@ -272,11 +306,12 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .section-title {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 600;
     display: flex;
     text-align: center;
 }
@@ -309,7 +344,8 @@
 .feature-text {
     display: flex;
     text-align: center;
-    color: #181818;
+    color: #FFFFFF;
+    padding-bottom: 10px;
 }
 
 .gallery-section {
@@ -333,18 +369,17 @@
 
 .steps-section {
     background-color: #DCE8F2;
+    overflow: hidden;
 }
 
 .step-title {
     font-size: 40px;
-    font-family: DM Sans;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
 }
 
 .step-name {
     font-size: 22px;
-    font-family: DM Sans;
     font-weight: bold;
     text-align: center;
 }
@@ -352,14 +387,12 @@
 .step-description {
     color: #8a8a8a;
     font-size: 16px;
-    font-family: DM Sans;
     text-align: center;
 }
 
 .more-description {
     color: #DD2242;
     font-size: 16px;
-    font-family: DM Sans;
     text-align: center;   
 }
 
@@ -375,7 +408,6 @@
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    font-family: DM Sans;
     font-weight: bold;
     margin-left: 125px;
 }
@@ -419,4 +451,75 @@
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .logo-header {
+        display: inline-block;
+        text-align: left;
+        font-size: 16px;
+        padding-right: 650px;
+        padding-bottom: 40px;
+    }
+
+
+    .btn-primary {
+        transform: translateX(-150px);
+        width: 150px;
+        height: 44px;
+        font-size: 12px;
+    }
+
+    .hero-cards-container {
+        justify-content: end;
+        transform: translateY(-140px);
+        
+    }
+
+    .features-section {
+        height: 85vh;
+    }
+
+    .feature-row {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+    }
+
+    .info-row.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .image-container {
+        flex: 1;
+    }
+
+    .image-container img {
+        width: 300px;
+        height: 200px;
+        display: block;
+    }
+
+    .text-content {
+        flex: 1;
+    }
+
+    .section-title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.2;
+        padding-right: 20px;
+        text-align: left;
+    }
+
+    .section-desc {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .btn-outline {
+        width: 200px;
+        height: 45px;
+    }
 }
