@@ -522,4 +522,146 @@ body {
         width: 200px;
         height: 45px;
     }
+
+    .stats-title {
+        padding-left: 250px;
+    }
+
+    .stats-desc {
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto 60px;
+    }
+
+    .stat-number {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .stat-text {
+        line-height: 1.5;
+    }
+
+    .promo-title {
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    .promo-text {
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto 60px;
+    }
+
+    .promo-btn {
+        width: 200px;
+        height: 50px;
+    }
+
+    .section-title {
+        font-size: 26px;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto 60px;
+        padding-left: 90px;
+        padding-top: 50px;
+    }
+
+    .video-frame {
+        margin-left: 140px;
+    }
+
+    .feature-label {
+        padding-left: 310px;
+    }
+
+    .feature-text {
+        padding-left: 50px;
+    }
+
+    .gallery-title {
+        padding-left: 290px;
+        font-size: 29px;
+    }
+
+    .gallery-desc {
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto 60px;
+    }
+
+    .step-title {
+        font-size: 34px;
+        padding-right: 300px;
+    }
+
+    .step-index {
+        width: 50px;
+        height: 50px;
+    }
+
+    .step-name {
+        margin-right: 130px;
+        transform: translateY(-60px);
+    }
+
+    .step-description {
+        padding-right: 160px;
+        transform: translateY(-60px);
+    }
+
+    .step-img {
+        margin-bottom: 100px;
+        padding-right: 100px;
+    }
+
+    .more-description {
+        display: none;
+    }
+
+    .footer {
+        height: 30vh;
+    }
+
+    .logo-footer {
+        padding-right: 550px;
+        transform: translateY(-50px);
+    }
+
+    .footer-links {
+        list-style: none;
+        margin-left: 240px;
+        padding: 0;
+        transform: translateY(-185px);
+        display: flex;
+        gap: 30px;
+    }
+
+    .copyright {
+        transform: translateY(-130px);
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .logo-header {
+        padding-right: 890px;
+        margin-bottom: 160px;
+    }
+
+    .hero-title {
+        padding-left: 120px;
+        transform: translateY(-180px);
+        font-size: 70px;
+    }
+
+    .btn-primary {
+        width: 150px;
+        transform: translateY(-200px);
+        margin-right: 350px;
+    }
 }
